@@ -41,7 +41,6 @@ Tags: light, white, single page, multipurpose, multi page, custom-colors, Bootst
 /*--------------------*/
 
 body,html{
-
 }
 
 #mainlogo{
@@ -2217,9 +2216,33 @@ img{
 }
 
 .contact-area-left{
+  padding-left: 70px;
+  padding-right: 70px;
   display: inline;
   float: left;
   width: 100%;
+}
+
+#email{
+ margin-left: -60px;
+ margin-right: -60px;
+ width:250px;
+}
+
+#contra{
+  margin-left: -60px;
+  margin-right: -60px;
+  width:250px;
+}
+
+#LOGIN{
+  margin-left: 20px;
+  width: 100px;
+}
+
+#Registrate{
+  font-size: 25px;
+  margin-left: 10px;
 }
 
 .contact-area-left h4{
