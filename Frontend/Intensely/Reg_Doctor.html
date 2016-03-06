@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Registro</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="assets/Img/small.png"/>
+    <link rel="shortcut icon" type="image/icon" href="assets/images/small.png"/>
     <!-- Font Awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -76,13 +76,13 @@
                   <li>
                     <div class="phone">
                       <i class="fa fa-phone"></i>
-                      Numero de los tipos
+                      Numero
                     </div>
                   </li>
                   <li>
                     <div class="mail">
                       <i class="fa fa-envelope"></i>
-                      Correo de los tipos
+                      Correo
                     </div>
                   </li>
                 </ul>
@@ -113,9 +113,8 @@
             </button>
             <!-- LOGO -->
             <!-- TEXT BASED LOGO -->
-            <a class="navbar-brand" href="index.html"><img id = "mainlogo" alt = "Logo" src = "./assets/Img/logo.png"/></a>
+            <a class="navbar-brand" href="index.html"><img id = "mainlogo" alt = "Logo" src = "./assets/images/logo.jpg"/></a>
             <!-- IMG BASED LOGO  -->
-             <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
@@ -134,7 +133,7 @@
            <div class="title-area">
               <h2 class="title">Registrate</h2>
               <span class="line"></span>
-              <p>Registrate para poder hacer una cita</p>
+              <p>Registrate para crear un perfil de Doctor</p>
             </div>
          </div>
          <div class="col-md-12">
@@ -148,15 +147,28 @@
                </div>
                <div class="col-md-8">
                  <div class="contact-area-right">
-                   <form method = "POST"  class="comments-form contact-form" name = "form2" action = "./email.php">
+                   <div class="btn-group" id="Esp_Dropdown">
+                      <button class="btn btn-default" data-label-placement>Especialidad</button>
+                      <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Medicina Interna</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Pediatria</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Neumologia</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Oftalmologia</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Neurologia</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Traumatologia</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Psiquiatria</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Neurocirugia</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Otorrinolaringologia</label></li>
+                          <li><input type="checkbox" id="ID" name="NAME" value="VALUE"><label for="ID">Cardiologia</label></li>
+                          <!-- Other items -->
+                        </ul>
+                    </div>
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Nombre" name = "Nombre">
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Apellido" name = "Apellido">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Especialidad" name = "Especialidad">
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Numero de Identidad" name = "Identidad">
@@ -171,7 +183,6 @@
                       <input type="text" class="form-control" placeholder="Contrasena" name = "Password">
                     </div>
                     <input type = "submit" value = "Registrarse" >
-                  </form>
                  </div>
                </div>
              </div>
